@@ -45,7 +45,7 @@ function CardWithGraph() {
   }, [bitcoinData]);
 
   return (
-    <div className="bg-gray-50 container mx-auto rounded-lg">
+    <div className="bg-gray-50 container mx-auto rounded-lg overflow-hidden">
       <div className="p-10 flex">
         <img src={bitcoin} alt="" className="h-10" />
         <p className="text-3xl flex">&nbsp; Bitcoin <span className="font-mono text-gray-500">&nbsp;BTC&nbsp;</span></p>
