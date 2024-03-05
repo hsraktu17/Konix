@@ -1,33 +1,47 @@
-import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
-import axios from "axios";
 import CardWithGraph from "./components/CardWithGraph";
 import AdCard from "./components/AdCard";
 import TrendingCoins from "./components/TrendingCoins";
 import Performance from "./components/Performance";
+import Sentiment from "./components/Sentiment";
 
 function App() {
   return (
     <div className="bg-gray-100">
       <Navbar />
-      <p className="px-10 py-3">Cryptocurrency &gt;&gt; Bitcoin</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-7">
-        <div className="md:col-span-2">
+      <p className="px-4 sm:px-8 py-3">Cryptocurrency &gt;&gt; Bitcoin</p>
+      <div className="grid grid-cols-1 gap-4 p-4 md:p-7">
+        {/* Show mobile layout */}
+        <div className="md:hidden">
           <CardWithGraph />
-        </div>
-        <div className="md:col-span-1">
-          <div className="md:ml-auto"> {/* Move the TrendingCoins component to the right */}
-            <AdCard />
-          </div>
+          <Performance />
+          <Sentiment />
+          <AdCard />
           <TrendingCoins />
         </div>
-        <div className="md:col-span-2">
-          <Performance />
+        {/* Show normal layout */}
+        <div className="hidden md:block">
+          <div className="md:grid md:grid-cols-3 md:gap-4">
+            <div className="col-span-2">
+              <CardWithGraph />
+            </div>
+            <AdCard />
+          </div>
+          <div className="md:grid md:grid-cols-3 md:gap-4">
+            <div className="col-span-2">
+            <Performance />
+            </div>
+            <TrendingCoins />
+          </div>
+          <div className="md:grid md:grid-cols-3 md:gap-4">
+            <div className="col-span-2">
+            <Sentiment />
+            </div>
+            
+          </div>
         </div>
       </div>
-      <div className="bg-gray-50 container mx-auto rounded-3xl">
-          
-        </div>
+      <div className="bg-gray-50 container mx-auto rounded-3xl"></div>
     </div>
   );
 }

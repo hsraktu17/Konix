@@ -3,50 +3,50 @@ import React from 'react';
 function Performance() {
   return (
     <div className='bg-gray-50 container mx-auto rounded-lg px-4 py-8 md:px-0'>
-      <nav className="flex justify-between items-center h-16">
-        <ul className="flex flex-wrap space-x-4">
-          <li>
-            <a href="#" className="text-black hover:text-blue-700">
-              Overview
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-black hover:text-blue-700">
-              Fundamentals
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-black hover:text-blue-700">
-              News
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-black hover:text-blue-700">
-              Insights
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-black hover:text-blue-700">
-              Sentiments
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-black hover:text-blue-700">
-              Team
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-black hover:text-blue-700">
-              Technicals
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-black hover:text-blue-700">
-              Tokenomics
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <nav className="flex justify-between items-center h-16 px-4 sm:px-8 md:px-12 lg:px-16">
+      <ul className="flex flex-wrap space-x-4 sm:space-x-8 md:space-x-12 lg:space-x-16">
+        <li>
+          <a href="#" className="text-black hover:text-blue-700">
+            Overview
+          </a>
+        </li>
+        <li>
+          <a href="#" className="text-black hover:text-blue-700">
+            Fundamentals
+          </a>
+        </li>
+        <li>
+          <a href="#" className="text-black hover:text-blue-700">
+            News
+          </a>
+        </li>
+        <li>
+          <a href="#" className="text-black hover:text-blue-700">
+            Insights
+          </a>
+        </li>
+        <li>
+          <a href="#" className="text-black hover:text-blue-700">
+            Sentiments
+          </a>
+        </li>
+        <li>
+          <a href="#" className="text-black hover:text-blue-700">
+            Team
+          </a>
+        </li>
+        <li>
+          <a href="#" className="text-black hover:text-blue-700">
+            Technicals
+          </a>
+        </li>
+        <li>
+          <a href="#" className="text-black hover:text-blue-700">
+            Tokenomics
+          </a>
+        </li>
+      </ul>
+    </nav>
       <div className='px-4'>
         <p className='text-3xl font-bold '>Performance</p>
         <br/>
