@@ -42,7 +42,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="box-content h-64 w-1/3 bg-gradient-to-r from-red-400 to-red-700 rounded-2xl flex items-center justify-center flex-col p-4">
+          <div className="box-content h-64 w-1/3 bg-gradient-to-r from-red-400 to-red-600 rounded-2xl flex items-center justify-center flex-col p-4">
             <div className="flex items-center">
               <img src={mobileLaptop} alt="" className='h-48 w-48 rounded-xl' />
               <div className="ml-4">

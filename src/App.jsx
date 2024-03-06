@@ -5,6 +5,9 @@ import TrendingCoins from "./components/TrendingCoins";
 import Performance from "./components/Performance";
 import Sentiment from "./components/Sentiment";
 import About from "./components/About";
+import Tokenomics from "./components/Tokenomics";
+import Team from "./components/Team";
+import YouMayLike from "./components/YouMayLike";
 
 function App() {
   return (
@@ -14,9 +17,24 @@ function App() {
       <div className="grid grid-cols-1 gap-4 p-4 md:p-7">
         <div className="md:hidden">
           <CardWithGraph />
-          <Performance />
-          <Sentiment />
-          <About />
+          <div className="mb-4"> {/* Add margin-bottom for gap */}
+            <Performance />
+          </div>
+          <div className="mb-4"> {/* Add margin-bottom for gap */}
+            <Sentiment />
+          </div>
+          <div className="mb-4"> {/* Add margin-bottom for gap */}
+            <About />
+          </div>
+          <div className="mb-4"> {/* Add margin-bottom for gap */}
+            <Tokenomics/>
+          </div>
+          <div className="mb-4"> {/* Add margin-bottom for gap */}
+            <Team/>
+          </div>
+          <div className="mb-4"> {/* Add margin-bottom for gap */}
+            <YouMayLike />
+          </div>
           <AdCard />
           <TrendingCoins />
         </div>
@@ -29,21 +47,34 @@ function App() {
           </div>
           <div className="md:grid md:grid-cols-4 md:gap-4">
             <div className="col-span-3">
-            <Performance />
+              <Performance />
             </div>
             <TrendingCoins />
           </div>
           <div className="md:grid md:grid-cols-4 md:gap-4">
             <div className="col-span-3">
-            <Sentiment />
+              <Sentiment />
             </div>
-            
           </div>
           <div className="md:grid md:grid-cols-4 md:gap-4">
             <div className="col-span-3">
-            <About />
+              <About />
             </div>
-            
+          </div>
+          <div className="md:grid md:grid-cols-4 md:gap-4">
+            <div className="col-span-3">
+              <Tokenomics />
+            </div>
+          </div>
+          <div className="md:grid md:grid-cols-4 md:gap-4">
+            <div className="col-span-3">
+              <Team />
+            </div>
+          </div>
+          <div className="md:grid md:grid-cols-4 md:gap-4">
+            <div className="col-span-3">
+              <YouMayLike />
+            </div>
           </div>
         </div>
       </div>
